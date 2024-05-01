@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: radial-gradient(#021027, #000000);
+    color: #fff;
+    padding: 20px;
+    font-family: Courier, monospace;
+}
+
+header h1 {
+    margin: 0;
+    position: relative;
+    transform: translate(0, 0%);
+    text-align: left;
+    display: flex;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+section {
+    padding: 20px;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    color: white;
+
+
+}
+
+footer {
+    background-image: radial-gradient(#021027, #000000);
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    opacity: 100%;
+}
