@@ -10,68 +10,105 @@
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 </head>
 
-<body class="p-3 m-0 border-0 bd-example">
+<body>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="containerLog">
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
 
-        <div class="card mb-3">
-            <img src="https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <div class="card-footer">
-                    <!-- button-->
-                    <div class="button">
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button"
-                                style="background-color: #021027; border-color:#021027">Button</button>
-                        </div>
+        <div class="content">
+            <!--FORMULÁRIO DE LOGIN-->
+            <div id="login">
+                <form method="post" action="D:\Faculdade\Projetinho S5\Index.html">
+                    <h2>Welcome to back!</h2>
+                    <p>
+                        <label for="nome_login">E-mail</label>
+                        <input id="nome_login" name="nome_login" required="required" type="text"
+                            placeholder="ex. contato@htmlecsspro.com" />
+                    </p>
+
+                    <p>
+                        <label for="email_login">Password</label>
+                        <input id="email_login" name="email_login" required="required" type="password"
+                            placeholder="ex. senha" />
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                        <label for="manterlogado">Remember Me</label>
+                    </p>
+
+                    <p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            I'm not a robot
+                        </label>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">.............</p>
-                </div>
-                <div class="card-footer">
-                    <div class="button">
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button"
-                                style="background-color: #021027; border-color:#021027">Button</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </p>
 
+                    <p>
+                        <input type="submit" value="Login" />
+                    </p>
 
-        <div class="card mb-3">
-            <div class="card h-100">
-            <img src="https://cdn.sanity.io/images/2yyup5mx/production/d5a915cd9db3444998926f61645b6f83a53aced0-5000x2813.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional
-                    content. This content is a little bit longer.</p>
-                <div class="card-footer">
-                    <!-- button-->
-                    <div class="button">
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button"
-                                style="background-color: #021027; border-color:#021027">Button</button>
-                        </div>
-                    </div>
-                </div>
+                    <p class="link">
+                        Don't have an account?
+                        <a href="#paracadastro">Sign up</a>
+                    </p>
+                </form>
             </div>
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="D:\Faculdade\Projetinho S5\Index.html">
+                    <h2>Sing Up</h2>
+
+                    <p>
+                        <label for="nome_cad">Full Name</label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                    </p>
+
+                    <p>
+                        <label for="dia">Date of Birth</label>
+                        <input id="dia" name="dia" required="required" type="date" placeholder="mm/dd/yyyy" />
+                    </p>
+
+                    <p>
+                        <label for="email_cad">E-mail</label>
+                        <input id="email_cad" name="email_cad" required="required" type="email"
+                            placeholder="contato@gmail.com" />
+                    </p>
+
+                    <p>
+                        <label for="senha_cad">Password</label>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password"
+                            placeholder="ex. 1234" />
+                    </p>
+
+                    <p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            I'm not a robot
+                        </label>
+                    </div>
+                    </p>
+                    <p>
+                        <input type="submit" value="Create Account" />
+                    </p>
+
+                    <p class="link">
+                        Already have an account?
+                        <a href="#paralogin"> Sign in</a>
+                    </p>
+                </form>
             </div>
         </div>
     </div>
+
+
+
+
 </body>
 
 </html>
