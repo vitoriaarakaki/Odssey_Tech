@@ -16,24 +16,23 @@
             <div class="container-fluid">
                 <a class="navbar-brand">
                     <h1>
-                        <img src="D:\Faculdade\Projetinho S5\imagsn\odyssey.png" alt="Logo" width="50" height="44"
+                        <img src="D:\Faculdade\Projetinho S5\imagsn\odyssey.png" alt="Logo" width="70" height="64"
                             class="d-inline-block align-text-top">
-                        Odissey Tech
+                            <nav>
+                                <a href="D:\Faculdade\Projetinho S5\Index.html"
+                                    style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Início</a>
+                                <a href="D:\Faculdade\Projetinho S5\Destinations.html"
+                                    style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Pacotes</a>
+                                <a href="#" style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Contato</a>
+                                <a href="D:\Faculdade\Projetinho S5\About_Us.html"
+                                    style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Sobre Nós</a>
+                            </nav>
                     </h1>
                 </a>
             </div>
         </div>
     </header>
 
-    <nav>
-        <a href="D:\Faculdade\Projetinho S5\Index.html"
-            style="color: #021027; font-family: 'Andale Mono', monospace; font-weight: bold">Início</a>
-        <a href="D:\Faculdade\Projetinho S5\Destinations.html"
-            style="color: #021027; font-family: 'Andale Mono', monospace; font-weight: bold">Pacotes</a>
-        <a href="#" style="color: #021027; font-family: 'Andale Mono', monospace; font-weight: bold">Contato</a>
-        <a href="D:\Faculdade\Projetinho S5\About_Us.html"
-            style="color: #021027; font-family: 'Andale Mono', monospace; font-weight: bold">Sobre Nós</a>
-    </nav>
 
     <br>
     <br>
@@ -44,12 +43,13 @@
     <br>
 
     <div class="containerLog">
+
         <a class="links" id="paracadastro"></a>
         <a class="links" id="paralogin"></a>
 
         <div class="content" style="opacity: 100%;">
             <!--FORMULÁRIO DE LOGIN-->
-            <div id="login">
+            <div id="login" style="font-family: 'Andale Mono', monospace; font-weight: bold">
                 <form method="post" action="D:\Faculdade\Projetinho S5\Index.html">
                     <h2>Bem Vindo de Volta!</h2>
                     <p>
@@ -77,7 +77,7 @@
             </div>
 
             <!--FORMULÁRIO DE CADASTRO-->
-            <div id="cadastro">
+            <div id="cadastro" style="font-family: 'Andale Mono', monospace; font-weight: bold">
                 <form method="post" action="D:\Faculdade\Projetinho S5\Index.html">
                     <h2>Cadastre-se</h2>
 
@@ -87,8 +87,8 @@
                     </p>
 
                     <p>
-                        <label for="dia">Data de Nascimento</label>
-                        <input id="dia" name="dia" required="required" type="date" placeholder="dd/mm/yyyy" />
+                        <label for="dia">CPF</label>
+                        <input id="cpf" name="cpf" required="required" type="text" placeholder="000.000.000-00" />
                     </p>
 
                     <p>

@@ -1,28 +1,30 @@
 body {
+    font-family: 'Andale Mono', monospace;
     margin: 0;
     padding: 0;
-    background-image: radial-gradient(#021027, #000000);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg");
+    background: url("D:/Faculdade/Projetinho S5/imagsn/onibus.jpg");
+    background-size: cover;
 }
+
 
 header {
     background-image: radial-gradient(#021027, #000000);
     color: #fff;
     padding: 20px;
     font-family: 'Andale Mono', monospace;
-    background-image: url("https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg");
+    background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5));
 }
 
-header h1 {
+header h2 {
     margin: 0;
     position: relative;
     transform: translate(0, 0%);
     text-align: left;
     display: flex;
+    align-items: center;
 }
 
 nav {
-    background-color: #f4f4f4;
     padding: 10px 0;
     text-align: center;
 }
@@ -33,57 +35,180 @@ nav a {
     padding: 10px 20px;
 }
 
-nav a:hover {
-    background-color: #ddd;
+
+
+/* esconde as ancoras da tela */
+a.links {
+    display: none;
 }
 
-section {
-    padding: 20px;
+
+/* Estilos para o contêiner do cabeçalho */
+.container {
+    position: relative;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    max-width: 1200px;
+    /* Largura máxima do contêiner */
+    margin: 0 auto;
+    /* Centraliza o contêiner horizontalmente */
+    padding: 0 20px;
+    /* Espaçamento interno para os elementos dentro do contêiner */
+}
+
+/* Estilos para o título do site */
+.container h1 {
+    margin: 0;
+    /* Remove as margens padrão */
+}
+
+/* Estilos para a barra de pesquisa */
+.search-container {
+    display: flex;
+    /* Exibe os elementos em linha */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    text-align: left;
+    position: relative;
+}
+
+/* Estilo para o campo de entrada */
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    /* Borda arredondada apenas no lado esquerdo */
+    width: 200px;
+    outline: none;
+    /* Remove a borda ao focar */
+}
+
+/* Estilo para o botão de pesquisa */
+.search-container button {
+    padding: 8px 15px;
+    background-color: #5900ff;
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branco */
+    border: 1px solid #5900ff;
+    border-radius: 0 5px 5px 0;
+    /* Borda arredondada apenas no lado direito */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+}
+
+/* Estilos de hover para o botão */
+.search-container button:hover {
+    background-color: #5900ff;
+    /* Cor de fundo mais escura no hover */
+}
+
+
+
+/* CARDS */
+
+/* Estilos para o contêiner de cartões */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha se não houver espaço suficiente */
+    gap: 50px; /* Espaçamento entre os cartões */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 200px;
+    height: 800px;
+    border-radius: 8px;
     font-family: 'Andale Mono', monospace;
-    font-weight: bold;
-    color: white;
-
-
+    background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5))
 }
-
-.button {
-    background-color: radial-gradient(#021027, #000000);
+.title {
+    font-weight: bold;
     color: #fff;
     text-align: center;
-    font-family: Courier, monospace;
-    font-weight: bold;
+    align-items: center;
+    height: 0.5px;
+    font-family: 'Andale Mono', monospace;
+    display: block;
+    margin: 20px;
+}
+.cards {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os cartões */
+    margin: 200px;
+    font-family: 'Andale Mono', monospace;
+    padding: 1px;
+    position: relative;
+
 }
 
-/*
-cursor: pointer;
-animation: pulse 5s infinite;
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+/* Estilos para o cartão */
+.card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse os limites do cartão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra do cartão */
+    background-color: #ccc;
+    display: inline-block;
+    font-family: 'Andale Mono', monospace;
 }
 
-.button:hover {
-    animation: none;
+/* Estilos para a imagem do cartão */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
-*/
+
+/* Estilos para o corpo do cartão */
+.card-body {
+    padding: 20px;
+}
+
+/* Estilos para o título do cartão */
+.card-body h3 {
+    margin: 0;
+    font-family: 'Andale Mono', monospace;
+}
+
+/* Estilos para o texto do cartão */
+.card-body p {
+    margin: 10px 0;
+    font-family: 'Andale Mono', monospace;
+}
+
+/* Estilos para o link do cartão */
+.card-body a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #00f114;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Andale Mono', monospace;
+}
+
+/* Estilos de hover para o link do cartão */
+.card-body a:hover {
+    background-color: #0056b3;
+}
+
 
 
 footer {
-    background-image: url("https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg");
+    background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5));
     color: #fff;
     text-align: center;
-    padding: 0px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
     opacity: 100%;
+
 }
+
