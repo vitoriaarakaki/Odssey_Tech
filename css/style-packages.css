@@ -2,7 +2,7 @@ body {
     font-family: 'Andale Mono', monospace;
     margin: 0;
     padding: 0;
-    background: url("D:/Faculdade/Projetinho S5/imagsn/onibus.jpg");
+    background: url("../assets/onibus.jpg");
     background-size: cover;
 }
 

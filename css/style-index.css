@@ -2,7 +2,7 @@ body {
     font-family: 'Andale Mono', monospace;
     margin: 0;
     padding: 0;
-    background: url("D:/Faculdade/Projetinho S5/imagsn/onibus.jpg");
+    background: url("../assets/onibus.jpg");
     background-size: cover;
 }
 
@@ -41,19 +41,17 @@ a.links {
 }
 
 
+/* .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+
+
 /* Estilos para o contêiner do cabeçalho */
 .container {
     position: relative;
-    display: flex;
-    text-align: left;
-    align-items: center;
-    /* Alinha os itens verticalmente */
-    max-width: 1200px;
-    /* Largura máxima do contêiner */
-    margin: 0 auto;
-    /* Centraliza o contêiner horizontalmente */
-    padding: 0 20px;
-    /* Espaçamento interno para os elementos dentro do contêiner */
+    /* background-color: black; */
 }
 
 /* Estilos para o título do site */
@@ -77,6 +75,7 @@ a.links {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
+    margin-left: 650px;
     /* Borda arredondada apenas no lado esquerdo */
     width: 200px;
     outline: none;
@@ -103,6 +102,9 @@ a.links {
     /* Cor de fundo mais escura no hover */
 }
 
+.icons {
+    margin-left: 100px;
+}
 
 section {
     padding: 20px;
