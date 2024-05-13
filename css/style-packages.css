@@ -1,17 +1,23 @@
-body {
-    font-family: 'Andale Mono', monospace;
-    margin: 0;
-    padding: 0;
-    background: url("../assets/onibus.jpg");
-    background-size: cover;
-}
-
 header {
     background-image: radial-gradient(#021027, #000000);
     color: #fff;
     padding: 20px;
     font-family: 'Andale Mono', monospace;
     background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5));
+
+    user-select: none;
+    /* Header não tem necessidade de ser selecionado */
+}
+
+body {
+    font-family: 'Andale Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: url("../assets/onibus.jpg");
+    background-size: cover;
+
+    user-select: none;
+    /* Header não tem necessidade de ser selecionado */
 }
 
 header h2 {
@@ -111,25 +117,32 @@ a.links {
     /* Muda o cursor para indicar clicabilidade */
 }
 
+.title {
+    margin: 0;
+    position: relative;
+    top: 140px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* CARDS */
 
 /* Estilos para o contêiner de cartões */
 .card-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha se não houver espaço suficiente */
-    gap: 50px; /* Espaçamento entre os cartões */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position: relative;
-    margin: 200px;
-    height: 800px;
+    width: 80%;
+    height: 60vh;
+    margin: 40px auto;
     border-radius: 8px;
-    font-family: 'Andale Mono', monospace;
-    background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5))
+    background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5));
 }
 
-.title {
+/* Movido para cima e alterado como preciso */
+/* .title {
+    position: relative;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -137,17 +150,17 @@ a.links {
     height: 0.5px;
     font-family: 'Andale Mono', monospace;
     display: block;
-    margin: 20px;
-}
+    margin: auto;
+} */
 
 .cards {
     display: flex;
-    gap: 20px; /* Espaçamento entre os cartões */
-    margin: 200px;
+    gap: 60px;  /* 20 >> 60 */
+    /* Espaçamento entre os cartões */
+    top: 50px;
     font-family: 'Andale Mono', monospace;
     padding: 1px;
     position: relative;
-
 }
 
 /* Estilos para o cartão */
@@ -162,6 +175,9 @@ a.links {
     background-color: #ccc;
     display: inline-block;
     font-family: 'Andale Mono', monospace;
+
+    text-align: center;
+    align-items: center;
 }
 
 /* Estilos para a imagem do cartão */

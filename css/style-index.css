@@ -1,17 +1,18 @@
-body {
-    font-family: 'Andale Mono', monospace;
-    margin: 0;
-    padding: 0;
-    background: url("../assets/onibus.jpg");
-    background-size: cover;
-}
-
 header {
     background-image: radial-gradient(#021027, #000000);
     color: #fff;
     padding: 20px;
     font-family: 'Andale Mono', monospace;
     background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5));
+    user-select: none; /* Header não tem necessidade de ser selecionado */
+}
+
+body {
+    font-family: 'Andale Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: url("../assets/onibus.jpg");
+    background-size: cover;
 }
 
 header h2 {
