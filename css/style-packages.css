@@ -155,7 +155,8 @@ a.links {
 
 .cards {
     display: flex;
-    gap: 60px;  /* 20 >> 60 */
+    gap: 60px;
+    /* 20 >> 60 */
     /* Espaçamento entre os cartões */
     top: 50px;
     font-family: 'Andale Mono', monospace;
