@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Odissey Tech</title>
+    <link rel="icon" href="assets/ASTRONAUTA.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style-procedure.css" />
+
+</head>
+
+<header>
+    <div>
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <h2>
+                    <img src="assets\odyssey.png" alt="Logo" width="70" height="64"
+                        class="d-inline-block align-text-top">
+
+                    <!-- bloco separado para os botões -->
+                    <div class="container">
+                        <nav>
+                            <a href="index.html"
+                                style="text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35); color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Início</a>
+                            <a href="packages.html"
+                                style="text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35); color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Pacotes</a>
+                            <a href="#"
+                                style="text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35); color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Contato</a>
+                            <a href="about-us.html"
+                                style="text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35); color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Sobre</a>
+                        </nav>
+                    </div>
+
+                    <!-- outro bloco para search bar -->
+                    <div class="search-container">
+                        <input type="text" id="search" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </div>
+
+                    <!-- outro bloco para os icones -->
+                    <div class="icons">
+                        <img src="assets\cartmarket 1.png" alt="Logo" width="40" height="34"
+                            class="d-inline-block align-text-top" style="margin-right: 10px;"> </img>
+
+                        <img src="assets\loginicon 1.png" alt="Logo" width="40" height="34"
+                            class="d-inline-block align-text-top" style="margin-left: 10px;"> </img>
+                    </div>
+
+                    <!-- Agora os 3 blocos são separados no header, 
+                ou seja você pode organiza-los separadamente na tela -->
+
+                </h2>
+            </a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <!-- Removido -->
+    <!-- <header>
+        <div>
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <h1>
+                        <img src="assets\odyssey.png" alt="Logo" width="70" height="64"
+                            class="d-inline-block align-text-top">
+                        <nav>
+                            <a href="index.html"
+                                style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Início</a>
+                            <a href="packages.html"
+                                style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Pacotes</a>
+                            <a href="#"
+                                style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Contato</a>
+                            <a href="about-us.html"
+                                style="color: whitesmoke; font-family: 'Andale Mono', monospace; font-weight: bold">Sobre
+                                Nós</a>
+                        </nav>
+                    </h1>
+                </a>
+            </div>
+        </div>
+    </header> -->
+
+
+    <!-- <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
+
+    <div class="containerLog">
+
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+
+        <div class="content" style="opacity: 100%;">
+            <!--FORMULÁRIO DE LOGIN-->
+            <div id="login" style="font-family: 'Andale Mono', monospace; font-weight: bold">
+                <form method="post" action="index.html">
+                    <h2>Bem Vindo de Volta!</h2>
+                    <p>
+                        <label for="nome_login">E-mail</label>
+                        <input id="nome_login" name="nome_login" required="required" type="text"
+                            placeholder="ex. contato@htmlecsspro.com" />
+                    </p>
+
+                    <p>
+                        <label for="email_login">Senha</label>
+                        <input id="email_login" name="email_login" required="required" type="password"
+                            placeholder="ex. senha" />
+                    </p>
+
+
+                    <p>
+                        <input type="submit" value="Login" />
+                    </p>
+
+                    <p class="link">
+                        Não tem conta?
+                        <a href="#paracadastro">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro" style="font-family: 'Andale Mono', monospace; font-weight: bold">
+                <form method="post" action="index.html">
+                    <h2>Cadastre-se</h2>
+
+                    <p>
+                        <label for="nome_cad">Nome Completo</label>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                    </p>
+
+                    <p>
+                        <label for="dia">CPF</label>
+                        <input id="cpf" name="cpf" required="required" type="text" placeholder="000.000.000-00" />
+                    </p>
+
+                    <p>
+                        <label for="email_cad">E-mail</label>
+                        <input id="email_cad" name="email_cad" required="required" type="email"
+                            placeholder="contato@gmail.com" />
+                    </p>
+
+                    <p>
+                        <label for="senha_cad">Senha</label>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password"
+                            placeholder="ex. 1234" />
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Criar Conta" />
+                    </p>
+
+                    <p class="link">
+                        Tem conta?
+                        <a href="#paralogin"> Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; ODYSSEY TECH - TODOS OS DIREITOS RESERVADOS</p>
+        <p>Termos de Serviços | Pagamentos | Cookies</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+header {
+    background-image: radial-gradient(#021027, #000000);
+    color: #fff;
+    padding: 20px;
+    font-family: 'Andale Mono', monospace;
+    background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5));
+    user-select: none;
+    /* Header não tem necessidade de ser selecionado */
+}
+
+body {
+    font-family: 'Andale Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: url("../assets/onibus.jpg");
+    background-size: cover;
+}
+
+header h2 {
+    margin: 0;
+    position: relative;
+    transform: translate(0, 0%);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+}
+
+
+/* esconde as ancoras da tela */
+a.links {
+    display: none;
+}
+
+
+/* .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+
+
+/* Estilos para o contêiner do cabeçalho */
+.container {
+    position: relative;
+    /* background-color: black; */
+}
+
+/* Estilos para o título do site */
+.container h1 {
+    margin: 0;
+    /* Remove as margens padrão */
+}
+
+/* Estilos para a barra de pesquisa */
+.search-container {
+    display: flex;
+    /* Exibe os elementos em linha */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    text-align: left;
+    position: relative;
+}
+
+/* Estilo para o campo de entrada */
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    margin-left: 650px;
+    /* Borda arredondada apenas no lado esquerdo */
+    width: 200px;
+    outline: none;
+    /* Remove a borda ao focar */
+}
+
+/* Estilo para o botão de pesquisa */
+.search-container button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branco */
+    border: 1px solid #007bff;
+    border-radius: 0 5px 5px 0;
+    /* Borda arredondada apenas no lado direito */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+}
+
+/* Estilos de hover para o botão */
+.search-container button:hover {
+    background-color: #0056b3;
+    /* Cor de fundo mais escura no hover */
+}
+
+.icons {
+    margin-left: 100px;
+}
+
+.icons :hover {
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+}
+
+section {
+    padding: 20px;
+    font-family: 'Andale Mono', monospace;
+    font-weight: bold;
+    color: white;
+}
+
+/* Container menu starts */
+.container-menu {
+    font-family: 'Andale Mono', monospace;
+    user-select: none;
+    position: fixed;
+    top: 100px;
+    left: 1650px;
+    width: 200px;
+    height: 210px;
+    background: white;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.menu-header {
+    position: relative;
+    background-color: BLACK;
+    height: 35px;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.btn {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.menu-footer {
+    position: relative;
+    background-color: BLACK; /* Cor reaplicavel */
+    top: 25px;
+    height: 35px;
+    width: 200px;
+    font-weight: bold;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.menu-footer span {
+    cursor: pointer;
+}
+
+/* Container menu Ends */
+
+footer {
+    background: linear-gradient(to bottom, rgba(182, 80, 241, 0.5), rgba(182, 80, 241, 0.5));
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 100%;
+}

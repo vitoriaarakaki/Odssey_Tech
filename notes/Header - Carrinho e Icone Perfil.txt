@@ -1,0 +1,60 @@
+HTML HEADER - 
+
+    <header>
+        <div class="logo">Logo</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+
+CSS HEADER - 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}

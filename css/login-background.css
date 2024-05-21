@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+/* Estilos para o contêiner de cartões */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha se não houver espaço suficiente */
+  gap: 20px; /* Espaçamento entre os cartões */
+  align-items: center;
+  text-align: center;
+  margin: 80px;
+}
+
+/* Estilos para o cartão */
+.card {
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites do cartão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
+  background-color: #ccc;
+  
+}
+
+/* Estilos para a imagem do cartão */
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos para o corpo do cartão */
+.card-body {
+  padding: 20px;
+}
+
+/* Estilos para o título do cartão */
+.card-body h3 {
+  margin: 0;
+}
+
+/* Estilos para o texto do cartão */
+.card-body p {
+  margin: 10px 0;
+}
+
+/* Estilos para o link do cartão */
+.card-body a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Estilos de hover para o link do cartão */
+.card-body a:hover {
+  background-color: #0056b3;
+}
+
