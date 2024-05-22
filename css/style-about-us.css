@@ -1,29 +1,33 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: radial-gradient(#021027, #000000);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg");
-}
-
-
 header {
     background-image: radial-gradient(#021027, #000000);
     color: #fff;
     padding: 20px;
     font-family: 'Andale Mono', monospace;
-    background-image: url("https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg");
+    background: linear-gradient(to bottom, #4c0c73b4, #4c0c73b4);
+    user-select: none;
+    /* Header não tem necessidade de ser selecionado */
 }
 
-header h1 {
+body {
+    font-family: 'Andale Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: url("../assets/saturno.jpeg");
+    background-size: cover;
+    user-select: none;
+    /* Header não tem necessidade de ser selecionado */
+}
+
+header h2 {
     margin: 0;
     position: relative;
     transform: translate(0, 0%);
     text-align: left;
     display: flex;
+    align-items: center;
 }
 
 nav {
-    background-color: #f4f4f4;
     padding: 10px 0;
     text-align: center;
 }
@@ -34,22 +38,193 @@ nav a {
     padding: 10px 20px;
 }
 
-nav a:hover {
-    background-color: #ddd;
+/* esconde as ancoras da tela */
+a.links {
+    display: none;
 }
 
-section {
-    padding: 20px;
-    font-family: 'Andale Mono', monospace;
+/* Estilos para o contêiner do cabeçalho */
+.container {
+    position: relative;
+    /* display: flex; */
+    /* text-align: left; */
+    /* align-items: center; */
+    /* Alinha os itens verticalmente */
+    /* max-width: 1200px; */
+    /* Largura máxima do contêiner */
+    /* margin: 0 auto; */
+    /* Centraliza o contêiner horizontalmente */
+    /* padding: 0 20px; */
+    /* Espaçamento interno para os elementos dentro do contêiner */
+}
+
+/* Estilos para o título do site */
+.container h1 {
+    margin: 0;
+    /* Remove as margens padrão */
+}
+
+/* Estilos para a barra de pesquisa */
+.search-container {
+    display: flex;
+    /* Exibe os elementos em linha */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    text-align: left;
+    position: relative;
+}
+
+/* Estilo para o campo de entrada */
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    margin-left: 650px;
+    /* Borda arredondada apenas no lado esquerdo */
+    width: 200px;
+    outline: none;
+    /* Remove a borda ao focar */
+}
+
+/* Estilo para o botão de pesquisa */
+.search-container button {
+    padding: 8px 15px;
+    background-color: #470063;
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branco */
+    border: 1px solid #470063;
+    border-radius: 0 5px 5px 0;
+    /* Borda arredondada apenas no lado direito */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+}
+
+/* Estilos de hover para o botão */
+.search-container button:hover {
+    background-color: #470063;
+    /* Cor de fundo mais escura no hover */
+}
+
+.icons {
+    margin-left: 100px;
+}
+
+.icons :hover {
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+}
+
+.title {
+    margin: 0;
+    position: relative;
+    top: 140px;
+    font-size: 32px;
+    text-align: center;
     font-weight: bold;
-    color: white;
+    color: #f9ebf2;
+}
+
+/* CARDS */
+
+/* Estilos para o contêiner de cartões */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+    margin: 40px auto;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #3bc48da9, #3bc48da9);
+}
+
+/* Movido para cima e alterado como preciso */
+/* .title {
+    position: relative;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    height: 0.5px;
+    font-family: 'Andale Mono', monospace;
+    display: block;
+    margin: auto;
+} */
+
+.cards {
+    display: flex;
+    gap: 60px;
+    /* 20 >> 60 */
+    /* Espaçamento entre os cartões */
+    top: 50px;
+    font-family: 'Andale Mono', monospace;
+    padding: 1px;
+    position: relative;
+}
+
+/* Estilos para o cartão */
+.card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse os limites do cartão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra do cartão */
+    background-color: #ccc;
+    display: inline-block;
+    font-family: 'Andale Mono', monospace;
+
+    text-align: center;
+    align-items: center;
+}
+
+/* Estilos para a imagem do cartão */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para o corpo do cartão */
+.card-body {
+    padding: 20px;
+}
+
+/* Estilos para o título do cartão */
+.card-body h3 {
+    margin: 0;
+    font-family: 'Andale Mono', monospace;
+}
+
+/* Estilos para o texto do cartão */
+.card-body p {
+    margin: 10px 0;
+    font-family: 'Andale Mono', monospace;
+}
+
+/* Estilos para o link do cartão */
+.card-body a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #27BC0F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Andale Mono', monospace;
+}
+
+/* Estilos de hover para o link do cartão */
+.card-body a:hover {
+    background-color: #0056b3;
 }
 
 footer {
-    background-image: url("https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg");
+    background: linear-gradient(to bottom, #4c0c73b4, #4c0c73b4);
     color: #fff;
     text-align: center;
-    padding: 0px;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
